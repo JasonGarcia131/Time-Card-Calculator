@@ -43,7 +43,7 @@ function App() {
             <b>Total Weekly Hours:</b>
             </td>
           <td>
-             <b>{sumWithInitial}</b>
+             <b>{sumWithInitial.toFixed(2)}</b>
           </td>
         </tr>
         </tbody>

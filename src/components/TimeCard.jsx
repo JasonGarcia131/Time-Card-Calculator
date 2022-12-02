@@ -49,7 +49,7 @@ function TimeCard(props) {
             if (Number(hours.inHours) === 12) {
                 hoursWorked = outHours - inMinutesToHours - deduction
                 setWeeklyHours((prevData) => [...prevData, hoursWorked])
-                return setTotalHours(hoursWorked)
+                return setTotalHours(hoursWorked.toFixed(2))
 
             } else if (Number(hours.outHours) < Number(hours.inHours)) {
                 return setErrorMessage("Please double check times.")
@@ -58,7 +58,7 @@ function TimeCard(props) {
             } else {
                 hoursWorked = outHours - inHours - deduction
                 setWeeklyHours((prevData) => [...prevData, hoursWorked])
-                return setTotalHours(hoursWorked)
+                return setTotalHours(hoursWorked.toFixed(2))
             }
         }
         //Case where time of day are differnt   
@@ -66,11 +66,11 @@ function TimeCard(props) {
             if (Number(hours.outHours) === 12) {
                 hoursWorked = (12 - inHours) + outMinutesToHours - deduction
                 setWeeklyHours((prevData) => [...prevData, hoursWorked])
-                return setTotalHours(hoursWorked)
+                return setTotalHours(hoursWorked.toFixed(2))
             } else {
                 hoursWorked = (12 - inHours) + outHours - deduction
                 setWeeklyHours((prevData) => [...prevData, hoursWorked])
-                return setTotalHours(hoursWorked)
+                return setTotalHours(hoursWorked.toFixed(2))
             }
 
         }
