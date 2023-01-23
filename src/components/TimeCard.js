@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 function TimeCard(props) {
 
@@ -20,7 +20,8 @@ function TimeCard(props) {
         inTimeOfDay: "",
         outTimeOfDay: "",
         lunchDeduction: 0
-    })
+    });
+
 
     //State variable for total hours worked and error message pop up.
     const [totalHours, setTotalHours] = useState(0);
@@ -33,18 +34,18 @@ function TimeCard(props) {
     }
 
     //Calculates total hours
-    const calculate = () => {
-        //Sets error state variable to empty string
+    const calculate = (hours) => {
+        // Sets error state variable to empty string
         setErrorMessage("");
 
-        //Minutes to hours conversions
+        // Minutes to hours conversions
         inMinutesToHours = hours.inMinutes / 60
         outMinutesToHours = hours.outMinutes / 60
         inHours = Number(hours.inHours) + inMinutesToHours;
         outHours = Number(hours.outHours) + outMinutesToHours;
         deduction = Number(hours.lunchDeduction) / 60;
 
-        //Case where the time of days are equal to each other. PM == PM or AM == AM
+        // Case where the time of days are equal to each other. PM == PM or AM == AM
         if (hours.inTimeOfDay === hours.outTimeOfDay) {
             if (Number(hours.inHours) === 12) {
                 hoursWorked = outHours - inMinutesToHours - deduction
@@ -105,7 +106,7 @@ function TimeCard(props) {
                 <input type="number" name="lunchDeduction" value={hours.lunchDeduction} onChange={handleChange} />
             </td>
             <td>
-                <button onClick={calculate}>Calculate</button>
+                <button onClick={()=>calculate(hours)}>Calculate</button>
             </td>
             <td>
                 {errorMessage.length > 0 ? <p style={{color: "red"}}>{errorMessage}</p>: totalHours}
