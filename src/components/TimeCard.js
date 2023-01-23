@@ -84,8 +84,8 @@ function TimeCard(props) {
             </td>
             <td>
                 <div>
-                    <input type="number" name="inHours" value={hours.inHours} onChange={handleChange} /> :
-                    <input type="number" name="inMinutes" value={hours.inMinutes} onChange={handleChange} />
+                    <input type="number" min={0} name="inHours"  value={hours.inHours} onChange={handleChange} /> :
+                    <input type="number" min={0} ="inMinutes" value={hours.inMinutes} onChange={handleChange} />
                     <select name="inTimeOfDay" value={hours.inTimeOfDay} onChange={handleChange}>
                         <option defaultValue={hours.inTimeOfDay}>AM</option>
                         <option>PM</option>
@@ -94,8 +94,8 @@ function TimeCard(props) {
             </td>
             <td>
                 <div>
-                    <input type="number" name="outHours" value={hours.outHours} onChange={handleChange} /> :
-                    <input type="number" name="outMinutes" value={hours.outMinutes} onChange={handleChange} />
+                    <input type="number" min={0} name="outHours" value={hours.outHours} onChange={handleChange} /> :
+                    <input type="number" min={0} name="outMinutes" value={hours.outMinutes} onChange={handleChange} />
                     <select name="outTimeOfDay" value={hours.outTimeOfDay} onChange={handleChange}>
                         <option defaultValue={hours.inTimeOfDay}>AM</option>
                         <option>PM</option>
