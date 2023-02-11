@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/Time-Card-Calculator/static/css/main.dc95eb44.css",
-    "main.js": "/Time-Card-Calculator/static/js/main.e717ccc0.js",
-    "static/js/787.747bfbca.chunk.js": "/Time-Card-Calculator/static/js/787.747bfbca.chunk.js",
+    "main.css": "/Time-Card-Calculator/static/css/main.32a3ca84.css",
+    "main.js": "/Time-Card-Calculator/static/js/main.3c166f60.js",
     "static/media/background2.JPG": "/Time-Card-Calculator/static/media/background2.ce3b20cebbb1d3ac9ff1.JPG",
     "index.html": "/Time-Card-Calculator/index.html",
-    "main.dc95eb44.css.map": "/Time-Card-Calculator/static/css/main.dc95eb44.css.map",
-    "main.e717ccc0.js.map": "/Time-Card-Calculator/static/js/main.e717ccc0.js.map",
-    "787.747bfbca.chunk.js.map": "/Time-Card-Calculator/static/js/787.747bfbca.chunk.js.map"
+    "main.32a3ca84.css.map": "/Time-Card-Calculator/static/css/main.32a3ca84.css.map",
+    "main.3c166f60.js.map": "/Time-Card-Calculator/static/js/main.3c166f60.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc95eb44.css",
-    "static/js/main.e717ccc0.js"
+    "static/css/main.32a3ca84.css",
+    "static/js/main.3c166f60.js"
   ]
 }
