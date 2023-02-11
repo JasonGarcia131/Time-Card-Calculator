@@ -1,6 +1,7 @@
 body {
   font-family: 'Times New Roman', Times, serif;
   width: 100%;
+  margin: 0;
 }
 
 input {
@@ -23,6 +24,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.errorMessage{
+  color: red;
+  font-weight: 600;
 }
 
 table {
@@ -54,6 +60,18 @@ td {
 
 button{
   background: transparent;
+}
+
+button:active{
+  background: lightgrey;
+}
+
+button:hover{
+  width: 100px;
+}
+
+tr{
+  height: 30px;
 }
 
 tr:nth-child(odd){
