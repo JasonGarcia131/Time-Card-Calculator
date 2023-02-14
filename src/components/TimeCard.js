@@ -50,7 +50,7 @@ function TimeCard(props) {
                 <input type="number" name="lunchDeduction" value={hours.lunchDeduction} onChange={handleChange} />
             </td>
             <td>
-                <button disabled={hours.inHours === 0 || hours.outHours === 0 ? true: false} onClick={()=>calculateHoursWorked(hours, index, day)}>Calculate</button>
+                <button disabled={hours.inHours <= 0 || hours.outHours <= 0 ? true: false} onClick={()=>calculateHoursWorked(hours, index, day)}>Calculate</button>
             </td>
             <td>
                 {weeklyHours[index]}
