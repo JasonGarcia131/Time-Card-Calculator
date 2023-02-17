@@ -3,7 +3,7 @@ import TimeCard from './components/TimeCard';
 import Calculate from './components/Calculate';
 import { useState } from 'react';
 
-function App() {
+function WeeklyTimeCard() {
 
   const DAYSOFWEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
@@ -71,4 +71,4 @@ function App() {
   );
 }
 
-export default App;
+export default WeeklyTimeCard;

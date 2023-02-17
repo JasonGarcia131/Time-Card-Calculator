@@ -24,7 +24,7 @@ function TimeCard(props) {
     return (
         <tr>
             <td>
-                {day}
+                {day ? day : ""}
             </td>
             <td>
                 <div>
