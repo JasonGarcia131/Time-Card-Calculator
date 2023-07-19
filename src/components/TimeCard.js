@@ -55,6 +55,12 @@ function TimeCard(props) {
             <td>
                 {weeklyHours[index]}
             </td>
+            <td>
+                {/* regular hours */}
+            </td>
+            <td>
+                {/* overtime hours */}
+            </td>
         </tr>
 
     )

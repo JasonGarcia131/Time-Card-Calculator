@@ -34,6 +34,7 @@ const Calculate = (hours) => {
 
     }
 
+    if(hoursWorked.toFixed(2) > 8) return {regularHours: 8, overTimeHours: hoursWorked.toFixed(2) - 8}
     return hoursWorked.toFixed(2);
 }
 

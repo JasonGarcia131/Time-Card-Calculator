@@ -49,7 +49,8 @@ function WeeklyTimeCard() {
             <th>Time-Out</th>
             <th>Deduction {`(min)`}</th>
             <th>{<p className='errorMessage'>{errorMessage}</p>}</th>
-            <th>Hours</th>
+            <th>Regular Hours</th>
+            <th>Overtime Hours</th>
           </tr>
         </thead>
         <tbody>
